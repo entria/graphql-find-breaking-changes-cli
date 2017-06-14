@@ -1,0 +1,29 @@
+{
+  "name": "@entria/graphql-findbreakingchanges",
+  "version": "1.0.0",
+  "bin": {
+    "graphql-findbreakingchanges": "./bin/find-breaking-changes"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "graphql": "^0.10.1",
+    "yargs": "^8.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "flow-bin": "^0.48.0"
+  },
+  "license": "ISC",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "flow": "flow",
+    "lint": "eslint .",
+    "prepublish": "npm run build",
+    "start": "babel-node src/index.js",
+    "watch": "babel -w -d ./lib ./src"
+  }
+}
