@@ -1,6 +1,6 @@
 {
   "name": "@entria/graphql-findbreakingchanges",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "graphql-findbreakingchanges": "./bin/find-breaking-changes"
   },
